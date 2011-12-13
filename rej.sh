@@ -1,8 +1,7 @@
-cho 'Stan ogolny 1-10'
 #!/bin/bash
 diagnoza=0;
-echo 'KLASYFIKACJA PACJENTÃW'
-echo 'Po wpisaniu danych wciÅij Enter by przejÅ dalej.'
+echo 'KLASYFIKACJA PACJENTï¿½W'
+echo 'Po wpisaniu danych wciï¿½ij Enter by przejï¿½ dalej.'
 echo 'ImiE:'
 read imie
 echo 'Nazwisko:'
