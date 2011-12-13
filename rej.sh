@@ -1,7 +1,7 @@
 #!/bin/bash
 diagnoza=0;
-echo 'KLASYFIKACJA PACJENT�W'
-echo 'Po wpisaniu danych wci�ij Enter by przej� dalej.'
+echo 'KLASYFIKACJA PACJENTOW'
+echo 'Po wpisaniu danych wcisnij Enter by przejsc dalej.'
 echo 'ImiE:'
 read imie
 echo 'Nazwisko:'
