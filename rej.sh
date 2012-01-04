@@ -8,28 +8,28 @@ echo 'Nazwisko:'
 read nazwisko
 echo 'Pesel:'
 read pesel
-touch "$nazwisko$imie"
-echo "PESEL:$pesel" >> "$nazwisko$imie"
+touch "$nazwisko$imie.txt"
+echo "PESEL:$pesel" >> "$nazwisko$imie.txt"
 echo 'Stan ogolny 1-10'
 read stan
 diagnoza=$[$diagnoza+10*$stan];
-echo "STAN:$stan" >> "$nazwisko$imie"
+echo "STAN:$stan" >> "$nazwisko$imie.txt"
 echo 'Przytomny? (1-tak/0-nie)'
 read przytomnosc
 diagnoza=$[$diagnoza+20*$przytomnosc];
-echo "PRZYTOMNOŒÆ:$przytomnosc" >> $nazwisko$imie
+echo "PRZYTOMNOŒÆ:$przytomnosc" >> "$nazwisko$imie.txt"
 echo 'Oddycha? (1-tak/0-nie)'
 read oddech
 diagnoza=$[$diagnoza+50*$oddech];
-echo "ODDECH:$oddech" >> $nazwisko$imie
-echo "DIAGNOZA:$diagnoza" >> "$nazwisko$imie"
+echo "ODDECH:$oddech" >> "$nazwisko$imie.txt"
+echo "DIAGNOZA:$diagnoza" >> "$nazwisko$imie.txt"
 
 if (($diagnoza<50));
 then
-mv $nazwisko$imie natychmiastowa_pomoc
+mv $nazwisko$imie.txt natychmiastowa_pomoc
 elif (($diagnoza<75));
 then
-mv $nazwisko$imie stan_posredni
+mv $nazwisko$imie.txt stan_posredni
 else
-mv $nazwisko$imie lagodne_schorzenie
+mv $nazwisko$imie.txt lagodne_schorzenie
 fi
