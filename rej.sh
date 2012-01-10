@@ -64,4 +64,3 @@ if test -e "$nazwisko$imie$pesel.txt"
 then
 rm "$nazwisko$imie$pesel.txt"
 fi
-
