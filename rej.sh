@@ -1,4 +1,5 @@
 #!/bin/bash
+#przed pierwszym odpaleniem skryptu należy uruchomic start.sh
 
 diagnoza=0;
 echo 'KLASYFIKACJA PACJENTOW'
